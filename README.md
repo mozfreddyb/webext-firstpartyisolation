@@ -1,7 +1,7 @@
 # webext-firstpartyisolation
 
-This add-on enables First Party isolation. Clicking the Fishbowl¹ icon
-disables it again.
+This add-on enables First Party isolation. Clicking the Fishbowl icon
+or removing the add-on disables it again.
 
 ## What is First Party Isolation ##
 First Party Isolation, also known as

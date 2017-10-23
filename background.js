@@ -8,7 +8,7 @@ function updateIcon(prefEnabled) {
     // e.g., when levelOfControl == not_controllable
     browser.browserAction.setIcon({
         path: prefEnabled ?
-            "icons/fishbowl.svg":
+            "icons/fishbowl-light.svg":
             "icons/fishbowl-disabled.svg"
     });
     browser.browserAction.setTitle({
