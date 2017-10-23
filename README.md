@@ -1,8 +1,7 @@
 # webext-firstpartyisolation
 
-This add-on enables [First Party isolation]. Clicking the Fishbowl¹ icon
-temporarily disables it for 5 minutes.If you want to permanently disable,
-you need to disable the extension in [about:addons](about:addons).
+This add-on enables First Party isolation. Clicking the Fishbowl¹ icon
+disables it again.
 
 ## What is First Party Isolation ##
 First Party Isolation, also known as
@@ -14,6 +13,16 @@ distinct between usage in the website itself and through third-party. *Think
 of it as blocking Third-party cookies, but more exhaustive.*
 Here are [Firefox's implementation details about First Party Isolation](https://wiki.mozilla.org/Security/FirstPartyIsolation)
 
+## Installation
+[Install on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/)
+
+## Uninstallation
+Firefox does not yet support the `onUninstalled` event, so it is recommended
+to manually disable First Party Isolation by clicking the addon's icon. The
+icon will turn orange to emphasize that First Party Isolation is disabled.
+You can now safely remove the add-on: Go to [about:addons](about:addons),
+find the First Party Isolation Add-on entry and click Remove.
+n****
 #### What's up with the fishbowl icon?
 It's hard to come up with an icon that explains First Party Isolation and
 I liked the fishbowl. 

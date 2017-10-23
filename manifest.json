@@ -2,7 +2,7 @@
   "description": "Enables First Party Isolation",
   "manifest_version": 2,
   "name": "First Party Isolation",
-  "version": "1.0",
+  "version": "1.1",
   "homepage_url": "https://github.com/mozfreddyb/webext-firstpartyisolation",
   "icons": {
     "48": "icons/fishbowl.svg",
@@ -27,7 +27,7 @@
         "dark": "icons/fishbowl.svg",
         "size": 32
     }],
-    "default_title": "Click to disable First Party Isolation for 5 minutes"
+    "default_title": "Click to disable First Party Isolation"
   }
 
 }
