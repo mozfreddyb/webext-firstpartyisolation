@@ -41,8 +41,6 @@ browser.browserAction.onClicked.addListener(() => {
     setFPI(!enabled);
 });
 
-
-
 //XXX onChange doesn't work just yet.
 //chrome.privacy.websites.firstPartyIsolate.onChange.addListener(prefChanged);
 
