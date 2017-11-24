@@ -28,6 +28,12 @@
         "size": 32
     }],
     "default_title": "Click to disable First Party Isolation"
+  },
+  
+  "applications": {
+    "gecko": {
+      "strict_min_version": "58.0a1"
+    }
   }
 
 }
