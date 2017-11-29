@@ -1,0 +1,17 @@
+{
+  "extensionName": {
+    "message": "First Party Isolation",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Aktiviert First Party Isolation",
+    "description": "Description of the add-on."
+  },
+  "TooltipDisableFPI": {
+    "message": "Klicke um First Party Isolation zu deaktivieren",
+    "description": "Tooltip for BrowserAction"
+  },
+  "TooltipReEnableFPI": {
+    "message": "Klicke um First Party Isolation wieder zu aktivieren",
+    "description": "Tooltip for BrowserAction"
+  }

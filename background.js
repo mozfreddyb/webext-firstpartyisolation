@@ -14,8 +14,8 @@ function updateIcon(prefEnabled) {
     browser.browserAction.setTitle({
         // Screen readers can see the title
         title: prefEnabled ?
-            "Click to disable First Party Isolation" :
-            'Click to re-enable First Party Isolation',
+            browser.i18n.getMessage("TooltipDisableFPI") :
+            browser.i18n.getMessage("TooltipReEnableFPI"),
     });
 }
 /*function refreshUI() {
