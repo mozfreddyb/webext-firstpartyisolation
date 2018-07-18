@@ -12,6 +12,6 @@
     "description": "Tooltip for BrowserAction"
   },
   "TooltipReEnableFPI": {
-    "message": "Click to disable First Party Isolation",
+    "message": "Click to re-enable First Party Isolation",
     "description": "Tooltip for BrowserAction"
   }
