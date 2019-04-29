@@ -3,7 +3,8 @@
 This add-on enables First Party isolation. Clicking the Fishbowl icon
 or removing the add-on disables it again.
 
-## What is First Party Isolation ##
+## What is First Party Isolation
+
 First Party Isolation, also known as
 [Cross-Origin Identifier Unlinkability](https://www.torproject.org/projects/torbrowser/design/#identifier-linkability)
 is a concept from the Tor Browser.
@@ -14,8 +15,10 @@ of it as blocking Third-party cookies, but more exhaustively.*
 Here are [Firefox's implementation details about First Party Isolation](https://wiki.mozilla.org/Security/FirstPartyIsolation)
 
 ## Installation
-[Install on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/)
+
+[Install on addons.mozilla.org](https://addons.mozilla.org/firefox/addon/first-party-isolation/)
 
 #### What's up with the fishbowl icon?
+
 It's hard to come up with an icon that explains First Party Isolation and
-I liked the fishbowl. 
+I liked the fishbowl.
