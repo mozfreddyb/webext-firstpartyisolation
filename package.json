@@ -11,6 +11,9 @@
   "scripts": {
     "test": "eslint ."
   },
+  "engines": {
+    "node": ">=8"
+  },
   "keywords": [
     "webext",
     "privacy",
