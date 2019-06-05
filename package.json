@@ -1,12 +1,22 @@
 {
   "name": "webext-firstpartyisolation",
   "version": "1.3.1",
+  "private": true,
   "description": "First Party Isolation Firefox Extension",
-  "main": "background.js",
-  "dependencies": {
+  "author": "Frederik Braun",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozfreddyb/webext-firstpartyisolation.git"
   },
+  "bugs": {
+    "url": "https://github.com/mozfreddyb/webext-firstpartyisolation/issues"
+  },
+  "homepage": "https://github.com/mozfreddyb/webext-firstpartyisolation#readme",
+  "main": "background.js",
+  "dependencies": {},
   "devDependencies": {
-    "eslint": "^4.10.0"
+    "eslint": "^5.16.0"
   },
   "scripts": {
     "test": "eslint ."
@@ -18,7 +28,5 @@
     "webext",
     "privacy",
     "first party isolation"
-  ],
-  "author": "Frederik Braun",
-  "license": "MPL-2.0"
+  ]
 }
