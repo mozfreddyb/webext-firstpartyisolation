@@ -16,13 +16,13 @@
   "main": "background.js",
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^5.16.0"
+    "eslint": "^7.4.0"
   },
   "scripts": {
     "test": "eslint ."
   },
   "engines": {
-    "node": ">=8"
+    "node": "10.12.0 || >=12.0.0"
   },
   "keywords": [
     "webext",
