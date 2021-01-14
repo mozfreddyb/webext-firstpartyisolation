@@ -2,7 +2,9 @@
 
 let enabled = true;
 // Enable FPI when the extension runs
-chrome.privacy.websites.firstPartyIsolate.set({ value: true });
+setFPI(true).then(() => {
+  updateIcon(enabled);
+});
 
 function updateIcon(prefEnabled) {
   // TODO maybe this needs a state of the enabled/disabled/error kind
@@ -30,20 +32,28 @@ function refreshUI() {
 }
 */
 
-function setFPI(state) {
-  chrome.privacy.websites.firstPartyIsolate.set({ value: state }, () => {
-    if (!chrome.runtime.lastError) {
-      enabled = state;
-    } else {
-      enabled = false;
+async function setFPI(state) {
+  if (state) {
+    // Can't enable FPI if cookieConfig uses dFPI ("reject_trackers_and_partition_foreign")
+    // so instead, we'll downgrade to strict tracking protection
+    // See https://bugzilla.mozilla.org/show_bug.cgi?id=1649876
+    const cookieConfig = await browser.privacy.websites.cookieConfig.get({});
+    if (cookieConfig.value.behavior == "reject_trackers_and_partition_foreign") {
+      await browser.privacy.websites.cookieConfig.set({ behavior: "reject_trackers"});
     }
-
-    updateIcon(enabled);
-  });
+  }
+  await browser.privacy.websites.firstPartyIsolate.set({ value: state });
+  if (!browser.runtime.lastError) {
+      enabled = state;
+  } else {
+    enabled = false;
+  }
 }
 
 browser.browserAction.onClicked.addListener(() => {
-  setFPI(!enabled);
+  setFPI(!enabled).then(() => {
+        updateIcon(enabled);
+  });
 });
 
 // XXX onChange doesn't work just yet.
